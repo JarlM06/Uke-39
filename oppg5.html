@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Lager variabel som heter 'alder' med en verdi brukeren skriver inn
+        let alder = prompt('Hvor gammel er du?');
+
+        // Sjekker om verdien til 'alder' er innenfor en viss grense,
+        // og skriver ut passende tekst til konsollen
+        if(alder < 9) {
+            console.log('Billetten er gratis!');
+        } else if(alder <= 17) {
+            console.log('Billetten koster 20 kr');
+        } else if(alder <= 65) {
+            console.log('Billetten koster 40 kr');
+        } else {
+            console.log('Billetten koster 20 kr');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

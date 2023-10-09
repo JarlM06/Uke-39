@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Lager en liste som inneholder en rekke forskjellige ord
+        let liste = ["I", "dag", "er", "jeg", "så", "lykkelig", "så", "lykkelig", "så", "lykkelig", "det", "hele", 
+        "endte", "dejligt", "jeg", "synger", "og", "er", "glad", "Ja", "alting", "endte", "lykkeligt", "så", 
+        "lykkeligt", "så", "lykkeligt", "i", "dag", "er", "jeg", "så", "lykkelig", "som", "dagen", "den", 
+        "er", "lang"]
+
+        // Logger til konsollen lengden på listen
+        console.log(`Der er ${liste.length} ord i listen`);
+
+        // Lager en 'ordbok' som inneholder verdier til tre ulike ord
+        // Alle verdiene er satt til 0 og skal endres senere
+        let ordbok = {
+            'så': 0,
+            'lykkelig': 0,
+            'dag': 0
+        };
+
+        // Lager en variabel som blir brukt i den neste delen av kode
+        let antall = 0;
+        // Går igjennom listen og teller antall ganger 'så', 'lykkelig' og 'dag' blir gjentatt
+        // Endrer ordboken med verdier som tilsvarer antall ganger ordene dukker opp i listen
+        liste.forEach(element => {
+            if(element === 'så' || element === 'lykkelig' || element === 'dag') {
+                antall++;
+                ordbok[element]++;
+            }
+        });
+
+        // Logger antall ganger 'så', 'lykkelig' og 'dag' blir gjentatt
+        // Logger ordboken med verdier som tilsvarer antall ganger ordene dukker opp i listen
+        console.log(`'så', 'lykkelig' og 'dag' vises ${antall} antall ganger i listen`);
+        console.log(`Ordbok med antall ganger 'så', 'lykkelig' og 'dag' vises i listen:`, ordbok);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

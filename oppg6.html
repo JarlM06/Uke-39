@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Lager variablen 'poengsum'
+        let poengsum = 0;
+
+        // Spør brukeren et spørsmål og sjekker om svaret var riktig
+        // Hvis svaret var riktig får brukeren vite det og poengsummen går opp, hvis ikke får brukeren feil
+        if(prompt('Hva er verdens høyeste fjell?').toLowerCase() === 'mount everest') {
+            console.log('Riktig!');
+            poengsum++;
+        } else {
+            console.log('Feil!');
+        }
+
+        // Enda et spørsmål
+        if(parseInt(prompt('Hvilket år sluttet andre verdenskrig?')) === 1945) {
+            console.log('Riktig!');
+            poengsum++;
+        } else {
+            console.log('Feil!');
+        }
+
+        // Enda et spørsmål
+        if(parseInt(prompt('Hvor gammel er Donald Trump?')) === 77) {
+            console.log('Riktig!');
+            poengsum++;
+        } else {
+            console.log('Feil!');
+        }
+
+        // Logger til konsollen din totale poengsum
+        console.log(`Du fikk ${poengsum} poeng!`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
